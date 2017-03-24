@@ -41,7 +41,6 @@ nav {
     color: black;
     text-decoration: none;
     text-align: center;
-    text:
     border-radius: 5px;
 }
 
@@ -55,6 +54,48 @@ nav {
 	color: white !important;
 }
 
+/* optymalize this code !!!  */
+ol {
+  list-style-type:none;
+  padding:0;
+  margin:0;
+  font-size:18px;
+  line-height:2em;
+  text-align:center;
+}
+
+ol li {
+   float:left;
+   width:100%;
+   background-color:#4c5fef;
+   height:2em;
+}
+
+ol li:first-child {
+	margin-left:0;
+}
+
+ol li:hover {
+   background-color:#4f91f9;
+   border-radius: 5px;
+}
+
+#ofer:hover ol ul {
+    display:block;
+}
+
+ol ul {
+	display:none;
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+        
+ol ul li {
+	position:relative;
+}
+
+
 #slider {
 	width: 100%;
 	height: 550px;
@@ -63,12 +104,32 @@ nav {
 
 article {
 	height: 400px;
-	background-color: #e1e3e8;
+	background-color: #f9fafc;
+}
+
+.contact {
+	height: 200px;
+	background-color: black;
+	color: white;
+	font-size: 50px;
+}
+/*change name class */
+.contact p {
+	margin: auto;
+	width: 100%;
+	max-width: 1200px;
+    padding-top: 40px;
+}
+
+#name {
+	height: 150px !important;
 }
 
 #contact {
-	height: 200px;
-	background-color: black;
+	font-size: 25px;
+	padding-left: 25px;
+	padding-top: 40px;
+	color: #8a8c91;
 }
 
 footer {
