@@ -4,7 +4,7 @@ $name = $_POST['name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
 $title = $_POST['title'];
-$who = "compol";
+$who = "sklep@compol.com.pl";
 $to = "sklep@compol.com.pl";
 
 //header for Polish characters

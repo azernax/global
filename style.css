@@ -132,10 +132,26 @@ article {
 	color: #8a8c91;
 }
 
+#contactIndex p {
+	
+}
+
+#contactIndex a {
+	text-decoration: none;
+	color: black;
+	background-color: #dadee5;
+	padding: 5px;
+	font-size: 40px;
+	border-radius: 10px;
+	margin-left: 40%;
+}
+
 #form {
 	color: #77787a;
 }
 
 footer {
 	height: 70px;
+	font-size: 30px;
+	text-align: center;
 }
