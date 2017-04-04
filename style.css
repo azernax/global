@@ -54,6 +54,16 @@ nav {
 	color: white !important;
 }
 
+
+.slide {
+	width: 100%;
+	max-height: 500px;
+}
+
+.btSlider {
+	
+}
+
 /* optymalize this code !!!  */
 ol {
   list-style-type:none;

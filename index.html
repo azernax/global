@@ -8,10 +8,37 @@
     </head>
     <body>
     	<nav class="view">
-    		<a href="index.html"><img id="logo" src="logo.png"/></a>
+    		<a href="index.html"><img id="logo" src="img/logo.png"/></a>
     		<div id="menu"><a class="active" href="index.html">Strona główna</a><a href="firma.html">Firma</a><a id="ofer" href="#">Oferta<ol><ul><li>produkt#1</li><li>produkt#2</li><li>produkt#3</li></ul></ol></a><a href="kontakt.html">Kontakt</a></div>
     	</nav>
-    	<div id="slider"></div>
+    	<div id="slider">
+    		<button class="btSlider" onclick="switchIMG(-1)">&#10094;</button>
+    		<img class="slide" src="img/1.png" />
+    		<img class="slide" src="img/2.png" />
+    		<img class="slide" src="img/3.png" />
+    		<button class="btSlider" onclick="switchIMG(+1)">&#10095;</button>
+    	</div>
+    	
+<script>
+	var ID = 1;
+	showIMG(ID);
+
+	function switchIMG(n) 
+	{
+	  	showIMG(ID += n);
+	}
+	
+	function showIMG(n) 
+	{
+		var i;
+		var x = document.getElementsByClassName("slide");
+		if (n > x.length) ID = 1;   
+		if (n < 1) ID = x.length;
+		for (i = 0; i < x.length; i++) x[i].style.display = "none";  
+		x[ID-1].style.display = "block";  
+	}
+</script>
+
     	<article class="view"></article>
     	<div class="contact" id="contactIndex">
     		<p>
