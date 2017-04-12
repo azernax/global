@@ -11,39 +11,39 @@
 	
 	<nav class="view">
     	<a href="index.html"><img id="logo" src="img/logo.png"/></a>
-    	<div id="menu"><a href="index.html">Strona główna</a><a href="firma.html">Firma</a><a id="ofer" href="#">Oferta<ol><ul><li>produkt#1</li><li>produkt#2</li><li>produkt#3</li></ul></ol></a><a class="active" href="kontakt.html">Kontakt</a></div>
+    	
+    	<div id="menu">
+    			<a class="menu_a" href="index.html">Strona główna</a>
+    			<a class="menu_a" href="firma.html">Firma</a>
+    			<a id="ofer" class="menu_a">Oferta</a>
+    			<a class="menu_a active" href="kontakt.html">Kontakt</a>
+    	</div>
     </nav>
     
     <div class="contact" id="name"><p>Kontakt</p></div>
     
     <article class="view" id="contact">
-	    <p>Dane adresowe: </p>
-	    <p>[nazwa]</p>
-	    <p>[adres]</p>
-	    <p>[adres cd]</p>
-	    <p>[nip]</p>
-	    <p>[email]</p>
-	    <p>[tel]</p>
-	    <br /><br />
-	    <p>Formularz zgłoszeniowy:</p>
-	    		
-	    <div id="form">
-	    	<form method="post" action="kontakt.php">
-		    	<label>Imię i nazwisko:</label>
-		    	<input name="name" placeholder="Jan Kowalski" />
-		    	<br />
-		    	<label>Email:</label>
-		    	<input name="email" type="email" placeholder="mojapoczta@poczta.com" />
-		    	<br />
-		    	<label>Temat:</label>
-		    	<input name="title" placeholder="temat" />
-		    	<br />
-		    	<label>Treść:</label>
-		    	<input name="message" placeholder="teść zapytania..." />
-		    	<br />
-		    	<input id="submit" name="submit" type="submit" value="Wyślij" />
-	    	</form>
-	    </div>	
+	    <h3>Dane adresowe: </h3> <br />
+	    <p>Global</p>
+	    <p>Gacki 54</p>
+	    <p>86-140 Drzycim</p>
+	    <p>875-134-51-75</p>
+	    <br /> <br />
+	    <h4>Dział Handlowy:</h4> <br />
+	    <p>Piotr Kwiatkowski</p>
+	    <p>
+	    	<a href="mailto:piotr@compol.com.pl">piotr@compol.com.pl</a> <br />
+	    	<a href="tel:697255001">tel: 697 255 001</a>
+    	</p>
+	    <br /> <br />
+	    <h4>Produkcja i Magazyn:</h4>
+	    <br />
+	    <p>Grzegorz Piliński</p>
+	    <p>
+		    <a href="mailto:grzegorz@compol.com.pl">grzegorz@compol.com.pl</a> <br />
+	    	<a href="tel:721225209">tel: 721 225 209</a>
+	    </p>		
+	  
     </article>
     
     <footer class="view">Global &copy; Wszelkie prawa zastrzeżone.</footer>
