@@ -5,7 +5,7 @@
 }
 
 body {
-margin: 0 auto;
+	margin: 0 auto;
 }
 
 .view {
@@ -16,6 +16,7 @@ margin: 0 auto;
 
 
 
+/*v Header v*/
 nav {
 	max-height: 100px;
 }
@@ -49,6 +50,7 @@ nav {
     border-style: solid;
     border-width: 1px;
     border-color: white;
+    transition: background-color 1s;
 }
 
 #menu a:hover {
@@ -63,8 +65,11 @@ nav {
 	background-color: #4c5fef;
 	color: white !important;
 }
+/*^ Header ^*/
 
 
+
+/*v Slider v*/
 #slider {
 	clear: both;
 }
@@ -87,12 +92,57 @@ nav {
 	top: 40%;
 	transform: translate(0%, -50%);
 }
+/*^ Slider ^*/
+
 
 
 article {
 	height: 600px;
 	background-color: #f9fafc;
 }
+
+
+
+/*v oferta ogolna v*/
+#artMain{
+	text-align: left;
+	height: 400px;
+	padding: 5px;
+}
+
+#artMain h2 {
+	font-size: 40px;
+	text-align: center;
+	margin: 25px;
+}
+
+#artMain img {
+	width: 100%
+	max-width: 100px;
+	float: left;
+	transition: margin-top 1s;
+}
+
+.tab:hover img {
+	margin-top: 5px;
+	transition: margin-top 1s;
+}
+
+.tab {
+	float: left;
+	width: 33%;
+	padding: 5px;
+	max-height: 100px;
+	margin-top: 25px;
+}
+
+.tab h4 {
+	font-size: 22px;
+	margin-bottom: 5px;
+}
+/*^ oferta ogolna ^*/
+
+
 
 .contact {
 	height: 200px;
@@ -140,6 +190,20 @@ article {
 	border-style: solid;
 	border-color: black;
 }
+
+
+
+/*v only kontakt.html v*/
+#contactText {
+	float: left;
+}
+
+#contactMap {
+	float: right;
+	margin: 60px;
+}
+/*^ only kontakt.html ^*/
+
 
 
 footer {
