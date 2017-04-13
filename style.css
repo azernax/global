@@ -18,7 +18,8 @@ body {
 
 /*v Header v*/
 nav {
-	max-height: 100px;
+	height: 100px;
+	margin-bottom: 15px !important;
 }
 
 #logo {
@@ -74,7 +75,7 @@ nav {
 	clear: both;
 }
 
-.slide {
+#slider img {
 	width: 100%;
 	max-height: 500px;
 }
@@ -93,13 +94,6 @@ nav {
 	transform: translate(0%, -50%);
 }
 /*^ Slider ^*/
-
-
-
-article {
-	height: 600px;
-	background-color: #f9fafc;
-}
 
 
 
@@ -143,7 +137,20 @@ article {
 /*^ oferta ogolna ^*/
 
 
+/*v article firma.html v*/
 
+article {
+	padding: 10px;
+	height: 300px;
+}
+
+article h2 {
+	font-size: 30px;
+	text-align: center;
+	margin: 15px;
+}
+
+/*^ article firma.html ^*/
 .contact {
 	height: 200px;
 	background-color: black;
