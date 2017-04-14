@@ -151,24 +151,99 @@ article h2 {
 }
 
 /*^ article firma.html ^*/
-.contact {
-	height: 200px;
+
+
+/*v oferta.html v*/
+
+#offer_block {
+	height: 1500px;
+}
+
+.offer {
+	width: 100%;
+	height: 450px;
+}
+
+.offer img {
+	width: 100%;
+	max-height: 300px;
+	float: left;
+	padding: 10px;
+}
+
+.offer h2 {
+	font-size: 50px;
+	text-align: center;
+	margin: 10px;
+}
+
+.offer p {
+	clear:both;
+	font-size: 15px;
+	padding: 10px;
+}
+
+/*^ oferta.html ^*/
+
+
+
+/*v main name on subpage v*/
+.nameSubpage {
+	height: 150px;
 	background-color: black;
 	color: white;
 	font-size: 50px;
 	clear: both;
 }
 
-/*change name class */
-.contact p {
+
+.nameSubpage p {
 	margin: auto;
 	width: 100%;
 	max-width: 1200px;
     padding-top: 40px;
 }
+/*^ main name on subpage ^*/
 
-#name {
-	height: 150px !important;
+
+/*v contact on bottom index.html v*/
+#contactBottom {
+	float:left;
+	width: 100%;
+	height: 200px;
+	background-color: black;
+	font-size: 50px;
+}
+
+#contactBottom p {
+	height: 126px;
+	width: 650px;
+	margin: 60px auto;
+}
+
+#contactBottom a {
+	float: left;
+	text-decoration: none;
+	color: black;
+	background-color: #dadee5;
+	padding: 5px;
+	font-size: 40px;
+	border-radius: 10px;
+	margin: 0 auto;
+	border-style: solid;
+	border-color: black;
+}
+/*^ contact on index.html ^*/
+
+
+/*v only kontakt.html v*/
+#contactText {
+	float: left;
+}
+
+#contactMap {
+	float: right;
+	margin: 60px;
 }
 
 #contact {
@@ -184,38 +259,13 @@ article h2 {
 	color: #8a8c91;
 }
 
-
-#contactIndex a {
-	float: left;
-	text-decoration: none;
-	color: black;
-	background-color: #dadee5;
-	padding: 5px;
-	font-size: 40px;
-	border-radius: 10px;
-	margin-left: 35%;
-	border-style: solid;
-	border-color: black;
-}
-
-
-
-/*v only kontakt.html v*/
-#contactText {
-	float: left;
-}
-
-#contactMap {
-	float: right;
-	margin: 60px;
-}
 /*^ only kontakt.html ^*/
-
 
 
 footer {
 	clear: both;
 	height: 70px;
+	width: 100% !important; 
 	font-size: 30px;
 	text-align: center;
 }

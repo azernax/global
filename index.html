@@ -13,16 +13,15 @@
 	<nav class="view">
     	<a href="index.html"><img id="logo" src="img/logo.png"/></a>
     	<div id="menu">
-    			<a class="menu_a active" href="index.html">Strona główna</a>
-    			<a class="menu_a" href="firma.html">Firma</a>
-    			<a class="menu_a" href="oferta.html">Oferta</a>
-    			<a class="menu_a" href="kontakt.html">Kontakt</a>
+    		<a class="menu_a active" href="index.html">Strona główna</a>
+    		<a class="menu_a" href="firma.html">Firma</a>
+    		<a class="menu_a" href="oferta.html">Oferta</a>
+    		<a class="menu_a" href="kontakt.html">Kontakt</a>
     	</div>
     </nav>
     
-    
     <button class="btSlider" id="btSliderLeft" onclick="switchIMG(-1)">&#10094;</button>
-    <button class="btSlider" id="btSliderRight" onclick="switchIMG(+1)">&#10095;</button>
+    <button class="btSlider" id="btSliderRight" onclick="switchIMG(1)">&#10095;</button>
     <div id="slider"></div>
     
     
@@ -37,7 +36,9 @@
 		
 		function switchIMG(n)
 		{
-			ID++; if(ID > 3) ID = 1;
+			if(n==-1 || n==1) ID +=n;
+			ID++; 
+			if(ID > 3 || ID <= 0) ID = 1;
 			var file = "<img src=\"img/" + ID + ".png\" />";
 			document.getElementById("slider").innerHTML = file;
 			
@@ -45,9 +46,6 @@
 			setTimeout("switchIMG(0)", 5000);
 			setTimeout("hideIMG()", 4500);
 		}
-			
-			
-		
 	</script>
 
     <div id="artMain" class="view">
@@ -71,7 +69,6 @@
     	</div>
     	
     	
-    	
     	<div class="tab">
     		<img src="img/c1w1.png" />
     		<h4>Opakowania tekturowe2</h4>
@@ -88,11 +85,10 @@
     		<img src="img/c3w1.png" />
     		<h4>Opakowania foliowe2</h4>
     		<p>Folia jest najtańszym materiałem służącym do pakowania produktów</p>
-    	</div>
-    	
+    	</div>	
     </div>
     	
-    <div class="contact" id="contactIndex">
+    <div id="contactBottom">
     	<p>
 	    	<a href="mailto:piotr@compol.com.pl">piotr@compol.com.pl</a>
 		    <a href="tel:697255001">tel: 697 255 001</a>
